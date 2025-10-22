@@ -11,6 +11,7 @@
 }
 
 /* === Sticky Transparent Navbar === */
+/* === NAVBAR === */
 .custom-navbar {
   position: sticky !important;
   top: 0;
@@ -26,7 +27,7 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Brand */
+/* === BRAND === */
 .brand {
   display: flex;
   align-items: center;
@@ -35,29 +36,41 @@
   color: var(--ink) !important;
 }
 
+/* LOGO beside Nexle Sweet Delight */
 .logo-mark {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  background-image: url('/pics/logo.png');
-  background-size: cover;
+  background-image: url('../pics/logo.png'); /* ✅ make sure path is correct */
+  background-size: contain; /* keeps logo proportions */
   background-position: center;
   background-repeat: no-repeat;
   flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.logo-mark:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* TEXT beside logo */
 .brand-text {
-  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
 }
 
 .brand-name {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 .brand-sub {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -87,6 +100,7 @@ body {
   overflow-x: hidden;
   background-color: #fff;
 }
+
 
 /* === HERO SECTION === */
 .hero {
