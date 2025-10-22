@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nexle Sweet Delight — Bakery</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">Nexle Sweet</a>
+      <ul class="nav-links">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stores">Stores</a></li>
+      </ul>
+      <button class="nav-cta">Order Online</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <h1 class="hero-title"><span>Nexle</span> Sweet <span>Delight</span></h1>
+          <p class="hero-sub">Customized pastries & colorful delights made fresh daily. Taste the joy!</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="#products">Explore Collection</a>
+            <a class="btn btn-outline" href="#stores">Find Our Stores</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- layered images -->
+          <div class="pastry-stage" aria-hidden="true">
+            <img class="pastry pastry--back" src="https://source.unsplash.com/collection/190727/800x600?sig=1" alt="" />
+            <img class="pastry pastry--left" src="https://source.unsplash.com/collection/190727/700x500?sig=2" alt="" />
+            <img class="pastry pastry--center" src="https://source.unsplash.com/collection/190727/900x700?sig=3" alt="" />
+            <img class="pastry pastry--right" src="https://source.unsplash.com/collection/190727/700x500?sig=4" alt="" />
+          </div>
+
+          <!-- mini carousel (thumbnails) -->
+          <div class="mini-carousel" id="mini-carousel">
+            <button class="thumb" data-img="https://source.unsplash.com/collection/190727/900x700?sig=3">
+              <img src="https://source.unsplash.com/collection/190727/120x120?sig=3" alt="macaron" />
+            </button>
+            <button class="thumb" data-img="https://source.unsplash.com/collection/190727/700x500?sig=4">
+              <img src="https://source.unsplash.com/collection/190727/120x120?sig=4" alt="donut" />
+            </button>
+            <button class="thumb" data-img="https://source.unsplash.com/collection/190727/800x600?sig=2">
+              <img src="https://source.unsplash.com/collection/190727/120x120?sig=2" alt="croissant" />
+            </button>
+            <button class="thumb" data-img="https://source.unsplash.com/collection/190727/800x600?sig=1">
+              <img src="https://source.unsplash.com/collection/190727/120x120?sig=1" alt="cake" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- playful background shapes -->
+      <div class="hero-decor">
+        <span class="dot dot--1"></span>
+        <span class="dot dot--2"></span>
+        <span class="dot dot--3"></span>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section products container">
+      <h2 class="section-title">Our Favorites</h2>
+      <p class="section-desc">Bright, fresh, and made with love — our bestsellers.</p>
+
+      <div class="grid cards">
+        <article class="card">
+          <img src="https://source.unsplash.com/collection/190727/600x500?sig=10" alt="product 1" loading="lazy">
+          <div class="card-body">
+            <h3>Rainbow Donut</h3>
+            <p class="muted">Glazed and sprinkled for maximum joy.</p>
+            <div class="card-actions">
+              <span class="price">₱120</span>
+              <button class="small">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://source.unsplash.com/collection/190727/600x500?sig=11" alt="product 2" loading="lazy">
+          <div class="card-body">
+            <h3>Macaron Stack</h3>
+            <p class="muted">Delicate, colorful, and melt-in-mouth.</p>
+            <div class="card-actions">
+              <span class="price">₱180</span>
+              <button class="small">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://source.unsplash.com/collection/190727/600x500?sig=12" alt="product 3" loading="lazy">
+          <div class="card-body">
+            <h3>Butter Croissant</h3>
+            <p class="muted">Flaky layers baked to golden perfection.</p>
+            <div class="card-actions">
+              <span class="price">₱95</span>
+              <button class="small">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://source.unsplash.com/collection/190727/600x500?sig=13" alt="product 4" loading="lazy">
+          <div class="card-body">
+            <h3>Strawberry Tart</h3>
+            <p class="muted">Fresh fruit on a buttery tart shell.</p>
+            <div class="card-actions">
+              <span class="price">₱150</span>
+              <button class="small">Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div class="about-image" aria-hidden="true">
+          <img src="https://source.unsplash.com/collection/190727/800x700?sig=21" alt="">
+        </div>
+        <div class="about-content">
+          <h2>Bright treats, brighter smiles</h2>
+          <p>At Nexle Sweet, we believe desserts should be playful and approachable. We use quality ingredients and fun flavours. Drop by our stores or order online — we’ll add a sprinkle of happiness to your day.</p>
+          <a class="btn btn-primary" href="#stores">Visit a Store</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORES -->
+    <section id="stores" class="section container">
+      <h2 class="section-title">Find Us</h2>
+      <p class="section-desc">Multiple locations across the city. Fresh batches daily.</p>
+
+      <div class="grid store-cards">
+        <div class="store">
+          <h4>Central Bakery</h4>
+          <p class="muted">123 Main St — Daily 7am–8pm</p>
+        </div>
+        <div class="store">
+          <h4>Riverside</h4>
+          <p class="muted">45 Riverwalk — Daily 8am–9pm</p>
+        </div>
+        <div class="store">
+          <h4>Uptown Corner</h4>
+          <p class="muted">9 Uptown Ave — Wed–Sun 9am–7pm</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <strong>Nexle Sweet Delight</strong> — Made with sprinkles.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
