@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS FOR CONTENT-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--ICON FOR TAB-->
+    <link rel="icon" href="pics/logo.png" type="image/png">
+    <!--TITLE-->
+    <title>Document</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg custom-navbar px-5">
+        <!--LEFT NAVBAR BRANDING-->
+        <div class="container">
+            <a class="brand" href="#home">
+                <div class="logo-mark"></div>
+                <div class="brand-text">
+                    <div class="brand-name">Nexle</div>
+                    <div class="brand-sub">Sweet Delight</div>
+                </div>
+            </a>
+        <!--TOGGLE BUTTON-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--LINKS-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#advantages">Why Choose Us?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-inner container">
+    <div class="hero-left">
+      <h1 class="hero-title"><span>Nexle</span> Sweet <span>Delight</span></h1>
+      <p class="hero-sub">
+        Customized pastries & colorful delights made fresh daily. Taste the joy!
+      </p>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="#products">Explore Collection</a>
+        <a class="btn btn-outline" href="#stores">Find Our Stores</a>
+      </div>
+    </div>
+
+    <!--Slideshow (Replaces layered pastries + mini carousel) -->
+    <div class="hero-right">
+      <div class="slideshow-container" id="slideshow">
+        <div class="slide fade">
+          <img src="pics/cake1.png" alt="Cake 1" />
+        </div>
+        <div class="slide fade">
+          <img src="pics/cake 2.png" alt="Cake 2" />
+        </div>
+        <div class="slide fade">
+          <img src="pics/cake 3.png" alt="Cake 3" />
+        </div>
+        <div class="slide fade">
+          <img src="pics/cake 4.png" alt="Cake 4" />
+        </div>
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- Dots -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+    <section id="about" class="section about animate">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>About Nexle Sweet Delight</h2>
+          <p>It all began in the quiet warmth of a small kitchen in Caloocan City, where Ms. Monet L. Denoso first discovered her love for baking. What started as a simple hobby of making cupcakes for family gatherings and birthday surprises. Slowly blossomed into something more meaningful. Each whisk, each sprinkle of flour, became an act of joy and creativity.</p>
+          <p>During her early days, Ms. Monet would spend late nights perfecting recipes using only the simplest tools she had. Her neighbors soon began to notice the sweet aroma wafting from her home and started placing small orders for celebrations. With every satisfied customer, her confidence grew, and so did her dream to share her homemade creations with more people.</p>
+          <p>Fueled by her passion and guided by faith, Monet turned that humble kitchen into Nexle Sweet Delight a name inspired by the idea of “next-level sweetness.” She envisioned a bakery that wasn’t just about cakes and pastries, but about moments — birthdays, weddings, graduations, and quiet Sunday mornings filled with the taste of something made with heart.</p>
+          <p>Today, Nexle Sweet Delight stands as a symbol of Ms. Monet’s dedication and artistry. Every cake is handcrafted, using quality ingredients and a generous dash of love just as she did in that very first kitchen. Her mission remains the same: to bring people together through the sweetness of shared joy.</p>
+        </div>
+        <div class="about-grid">
+          <img src="pics/owner.jpg" alt="baker" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS (display only) -->
+    <section id="products" class="section products">
+      <div class="container">
+        <h2 class="section-title animate">Our sweet creations</h2>
+        <p class="section-lead animate">Explore a selection of cakes, cupcakes and pastries.</p>
+
+        <div class="product-grid">
+          <div class="product-card animate">
+            <img src="pics/cake1.png" alt="Strawberry cake">
+            <h3>Barbie Cake</h3>
+          </div>
+
+          <div class="product-card animate">
+            <img src="pics/cake 8.png" alt="Cupcake">
+            <h3>Numbered Debut Cake</h3>
+          </div>
+
+          <div class="product-card animate">
+            <img src="pics/cake 4.png" alt="Donut">
+            <h3>Unicorn Cake</h3>
+          </div>
+
+          <div class="product-card animate">
+            <img src="pics/ironmancake.png" alt="Chocolate cake">
+            <h3>Iron Man Cake</h3>
+          </div>
+
+          <div class="product-card animate">
+            <img src="pics/spiderman cake.png" alt="Macaron">
+            <h3>Spider-Man Cake</h3>
+          </div>
+
+          <div class="product-card animate">
+            <img src="pics/redhorsecake.png" alt="Tart">
+            <h3>Red Horse Caket</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVANTAGES -->
+    <section id="advantages" class="section advantages animate">
+      <div class="container">
+        <h2 class="section-title">Why choose us</h2>
+        <div class="adv-grid">
+          <div class="adv-item">
+            <div class="adv-icon">✔</div>
+            <h4>Natural ingredients</h4>
+            <p class="muted">No artificial colors or unnecessary additives.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon">🏠</div>
+            <h4>Handmade</h4>
+            <p class="muted">Small-batch, crafted with care.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon">🌸</div>
+            <h4>Creative designs</h4>
+            <p class="muted">Custom styling for special occasions.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon">♻</div>
+            <h4>Eco aware</h4>
+            <p class="muted">Thoughtful packaging and reduced waste.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+<section class="feedback-section" id="reviews">
+  <h2 class="section-title">Customer Feedback</h2>
+  <div class="feedback-grid">
+    <div class="feedback-card">
+      <img src="pics/fb1.jpg" alt="User 1">
+    </div>
+
+    <div class="feedback-card">
+      <img src="pics/fb2.jpg" alt="User 2">
+    </div>
+
+    <div class="feedback-card">
+      <img src="pics/fb3.jpg" alt="User 3">
+
+    </div>
+
+    <div class="feedback-card">
+      <img src="pics/fb4.jpg" alt="User 4">
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact animate">
+      <div class="container contact-inner">
+        <div>
+          <h2>Contact</h2>
+          <p>Address: Cypress Drive, Bellefonte, Brgy. 174 Camarin, Caloocan City</p>
+          <p>Phone: +63 991 100 2602/+63 906 234 3660</p>
+          <p>Email: denosomonet@gmail.com</p>
+          <p>FB Page: Nexle Sweet Delight</p>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2022 Nexle Sweet Delight</div>
+      <div class="footer-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
